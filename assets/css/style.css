@@ -10,6 +10,7 @@ header {
   padding: 10px;
   font-size: 20px;
   background-color: rgb(138, 54, 23);
+  border: 2px solid rgb(54, 0, 0);
   justify-content: space-between;
 }
 
@@ -25,6 +26,7 @@ article section {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: rgb(172, 148, 148);
   border: 2px solid rgb(54, 0, 0);
@@ -50,14 +52,18 @@ img {
   border-radius: 3px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(54, 0, 0);
+}
+
 .link {
   color: inherit;
   text-decoration: none;
 }
 
 .card {
-  /* A flex-basis of 200px sets the starting width */
-  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
   flex: 1 0 200px;
   padding: 10px;
   text-align: center;
@@ -101,5 +107,6 @@ img {
 
 #coming-soon {
   width: 80%;
-  padding-left: 30%;
+  display: flex;
+  justify-content: center;
 }
